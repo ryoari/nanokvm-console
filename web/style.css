@@ -1,0 +1,19 @@
+:root{font:16px system-ui,sans-serif;color:#e7edf5;background:#10151d;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0}main{max-width:1280px;margin:auto;padding:20px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px}h1{font-size:1.4rem;margin:0 0 16px}
+.controls{display:flex;flex-wrap:wrap;gap:8px}button{font:inherit;border:1px solid #566174;border-radius:6px;padding:9px 14px;background:#253247;cursor:pointer}
+button:hover{background:#344661}button:disabled{opacity:.5;cursor:default}button:first-child{background:#2456a0}
+video{display:block;width:100%;height:min(70vh,750px);background:#05070b;object-fit:contain;border:1px solid #374354;border-radius:6px}
+video:focus{outline:2px solid #7db8ff}.hint,footer{font-size:.85rem;color:#adbbcd}details{border-top:1px solid #374354;padding:14px 0}
+summary{cursor:pointer}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.8rem}a{color:#9bc8ff}footer{padding-top:16px}#consoleMessage{min-height:1.5em}
+@media(max-width:600px){main{padding:12px}header{align-items:baseline}#mode{font-size:.8rem}video{height:55vh}.controls button{flex:1 1 45%;padding:9px}}
+
+.session-status{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0;font-size:.9rem}.session-status span{padding:5px 10px;border:1px solid #566174;border-radius:6px}.viewer{position:relative}#consoleEmpty{position:absolute;inset:0;display:grid;place-content:center;text-align:center;padding:24px;color:#adbbcd;pointer-events:none}#consoleEmpty[hidden]{display:none}
+
+button{min-height:44px}#consoleEmpty{background:#05070b;border:1px solid #374354;border-radius:6px}
+
+button:not(:disabled):hover{background:#3a506f}#consoleConnect:not(:disabled):hover{background:#326bbd}button:not(:disabled):active,#consoleConnect:not(:disabled):active{background:#16345f;box-shadow:inset 0 0 0 2px #a8ceff}button:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #a8ceff;outline-offset:3px}
+
+.check-list{list-style:none;padding:0;margin:16px 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.check-list li{padding:12px;border:1px solid #374354;border-radius:6px;display:grid;grid-template-columns:1fr auto;gap:6px 12px;overflow-wrap:anywhere}.check-list strong{font-weight:500}.check-list span{font-size:.85rem;color:#9de4ba}.check-list small{grid-column:1/-1;color:#adbbcd;line-height:1.5}.check-list small:empty{display:none}.check-list .check-failed span{color:#ffd39d}#technicalDetails{margin-top:12px}#consoleIdentity{line-height:1.6}@media(max-width:600px){.check-list{grid-template-columns:1fr}}
+
+button:disabled{background:#253247;box-shadow:none}

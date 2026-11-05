@@ -1,0 +1,10 @@
+/target/
+/verification/.lake/
+/.venv/
+/__pycache__/
+**/__pycache__/
+/.pytest_cache/
+*.pem
+*.key
+/connection.json
+/launch.*

@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NanoKVM console</title><link rel="stylesheet" href="/assets/style.css"></head>
+<body><main id="console"><header><h1>NanoKVM console</h1><span id="mode">Local Go+</span></header>
+<div class="controls"><button id="consoleConnect">Connect / reconnect</button>
+<button id="consoleArm" disabled>Enable input</button><button id="consoleClose">Close console</button>
+<button id="consoleRead">Check connection</button></div>
+<p id="consoleMessage" role="status">Opening the private local session…</p>
+<div class="session-status" role="status"><span id="connectionState">Disconnected</span><span id="inputState">Input disabled</span></div>
+<div class="viewer"><div id="consoleEmpty">Select Connect to show the remote screen.</div>
+<video id="consoleVideo" autoplay playsinline muted tabindex="0" aria-label="Remote console"></video></div>
+<p class="hint">Input starts disabled. Press Escape to disable input. Moving keyboard focus away releases keys and buttons.</p>
+<details id="diagnostics"><summary>Connection details</summary><p id="consoleDiagnosticSummary" role="status"></p><p id="consoleIdentity" class="hint"></p><ul id="consoleChecks" class="check-list"></ul><details id="technicalDetails"><summary>Technical details</summary><pre id="consoleDiagnostics">Select Check connection.</pre></details></details>
+<footer>Private local connection · <a id="vendorLink" hidden target="_blank" rel="noreferrer">Vendor console</a></footer>
+</main><script src="/assets/console.js"></script><script src="/assets/app.js"></script></body></html>

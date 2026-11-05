@@ -1,0 +1,13 @@
+name = "console_verification"
+version = "0.1.0"
+defaultTargets = ["console_guard"]
+
+[[lean_lib]]
+name = "Console"
+
+[[lean_lib]]
+name = "Evidence"
+
+[[lean_exe]]
+name = "console_guard"
+root = "Main"
