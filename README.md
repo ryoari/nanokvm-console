@@ -114,6 +114,13 @@ The supported baseline is Go+ image v1.0.9, application 0.2.2, a Linux operator,
 and Chromium. Other firmware versions, operating systems, WAN routes and normal
 NanoKVM Go need separate qualification. Go and Go+ are not treated as interchangeable.
 
+Hardware checks on that baseline confirmed 1920 × 1200 video, keyboard and mouse
+effects in a separate receiver window, software closure/reconnection, and fallback
+from an unavailable route to USB. The operator and target were the same Linux
+computer. Automatic retry timing and trust-failure cases use synthetic tests.
+The Wi-Fi-related physical reboot report remains unresolved; this app does not
+claim to repair that device fault.
+
 See [verification limits](docs/VERIFICATION.md) and [security](SECURITY.md).
 Licensed under [GPL-3.0-or-later](LICENSE). This is an independent client, not a
 Sipeed product.
